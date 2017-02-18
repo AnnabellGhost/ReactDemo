@@ -19,7 +19,7 @@ export function fetchAllTodos() {
 		});
 		
 		//fetching
-		const response = await fetch('http://localhost:8080/allItems.json');
+		const response = await fetch('/allItems.json');
 
 		console.log(response.headers.get('Content-Type'));
 		
@@ -56,7 +56,7 @@ export function editItem(id,text){
 		text:text
 	}
 };
-
+//http://localhost:8080/allItems.json
 // export default {...addNewItem,...deleteItem,...editItem};
 /*TRYING TO TEST ... 
 		response.setContentType("application/json");
