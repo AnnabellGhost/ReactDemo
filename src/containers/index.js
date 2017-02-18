@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import WeightList from '../components/WeightList';
-import AddWeightItem from './AddWeightItem';
+import List from '../components/List';
+import AddItem from './AddItem';
 import FilterableTable from './FilterableTable';
 import Footer from '../components/Footer';
 import style from '../index.css';
 import {Grid, Col} from 'react-bootstrap';
-/*class App extends Component*/
+
 /*var ITEMS=[
 	{id:0,text:'dddd'},
 	{id:1,text:'scdf'},
@@ -16,9 +16,9 @@ import {Grid, Col} from 'react-bootstrap';
 const App=(filter)=>(
 		<Grid>
 			<Col xs={12} md={8}>
-				<AddWeightItem/>
+				<AddItem/>
 				<p>Hey</p>
-				<WeightList/>
+				<List/>
 				<Footer urlFilter={filter}/>
 			</Col>
 		</Grid>		

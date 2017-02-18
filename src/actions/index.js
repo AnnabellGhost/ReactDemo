@@ -19,14 +19,13 @@ export function fetchAllTodos() {
 		});
 		
 		//fetching
-		const response = await fetch('http://localhost:8080/public/allItems.json');
+		const response = await fetch('http://localhost:8080/allItems.json');
 
 		console.log(response.headers.get('Content-Type'));
 		
 		//response
 		const data = await response.json();
-        console.log(data);
-        //没有问题 fetch到了Jason文件 还是我的URL 有问题
+
 		//dispatch fetch end action
 		return dispatch({
 			type: 'FETCH_ALL_TODOS',

@@ -1,23 +1,21 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import WeightItem from './WeightItem' ;
+import Item from './Item' ;
 // import {deleteItem} from '../actions/DeleteItem';
 import * as Actions from '../actions';
 import { bindActionCreators } from 'redux';
 import style from '../index.css';
 
-class WeightList extends React.Component{
+class List extends React.Component{
     componentDidMount(){
       this.props.actions.fetchAllTodos();
     }
-
-
 
     render(){
     // if(this.props.urlFilter.params.filter==='a'){return(<FilterableTable/>)}
     // console.log(this.props.Items);
     var List=this.props.Items.data.map((item)=>(
-       <WeightItem key={item.id} {...item} {...this.props}/>
+       <Item key={item.id} {...item} {...this.props}/>
     ));
     return(
       <div>
@@ -43,7 +41,7 @@ function mapDispatchToProps(dispatch) {
   };
 };
 
-export default connect(mapStateToProps,mapDispatchToProps)(WeightList);
+export default connect(mapStateToProps,mapDispatchToProps)(List);
 // export default connect()(WeightList);
 
 

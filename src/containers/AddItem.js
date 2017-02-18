@@ -3,11 +3,10 @@ import * as Actions from '../actions';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import style from '../index.css';
-// import Button from 'react-bootstrap/lib/Button';
 // import addNewItem from '../actions';
-// import * as Actions from '../actions';
 
-class AddWeightItem extends React.Component{
+
+class AddItem extends React.Component{
 	
 /*handleSubmit=(e)=>{
   e.preventDefault();
@@ -19,16 +18,6 @@ render(){
   let input;
   // console.log(this.props.actions.addNewItem);
 	return (
-    // <form onSubmit={e => {
-        // e.preventDefault();
-        // console.log('dispatching', this.props.actions.addNewItem(input.value));
-        // this.props.actions.addNewItem(input.value);
-        // this.props.dispatch(addNewItem(input.value));
-        // input.value = '';}}>
-        // <input ref={node => {input = node}} />
-        // <button type="submit">Add Todo</button>
-    // </form>
-
       <div className={style.addItemStyle}>
 
         <label for="addI">Text:<input id="addI" ref={node => {input = node}} className={style.inputStyle}/></label>
@@ -40,10 +29,19 @@ render(){
 
       </div>
 
+      //Second chioce
+  /*  
+    <form onSubmit={e => {
+        e.preventDefault();
+        console.log('dispatching', this.props.actions.addNewItem(input.value));
+        this.props.actions.addNewItem(input.value);
+        this.props.dispatch(addNewItem(input.value));
+        input.value = '';}}>
+        <input ref={node => {input = node}} />
+        <button type="submit">Add Todo</button>
+    </form>
 
-
-
-
+  */
     
   )
 }
@@ -63,5 +61,5 @@ function mapDispatchToProps(dispatch) {
   };
 };
 
-export default connect(mapStateToProps,mapDispatchToProps)(AddWeightItem);
-// export default AddWeightItem;
+export default connect(mapStateToProps,mapDispatchToProps)(AddItem);
+
