@@ -19,7 +19,7 @@ export function fetchAllTodos() {
 		});
 		
 		//fetching
-		const response = await fetch('/allItems.json');
+		const response = await fetch('/ReactDemo/allItems.json');
 
 		console.log(response.headers.get('Content-Type'));
 		
