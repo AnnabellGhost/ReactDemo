@@ -34,7 +34,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "https://annabellghost.github.io/ReactDemo/";
+/******/ 	__webpack_require__.p = "/ReactDemo/";
 
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -30236,7 +30236,7 @@
 			text: text
 		};
 	};
-
+	//http://localhost:8080/allItems.json
 	// export default {...addNewItem,...deleteItem,...editItem};
 	/*TRYING TO TEST ... 
 			response.setContentType("application/json");
