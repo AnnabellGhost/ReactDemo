@@ -30182,7 +30182,7 @@
 
 								//fetching
 								_context.next = 5;
-								return fetch('/allItems.json');
+								return fetch('/ReactDemo/allItems.json');
 
 							case 5:
 								response = _context.sent;
