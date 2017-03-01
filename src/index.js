@@ -18,7 +18,7 @@ const logger = store => next => action => {
   return result
 }
 
-
+// const store = applyMiddleware(promiseMiddleware)(createStore)(reducer,initialState);
 var store=createStore(reducers,applyMiddleware(logger,thunk));
 render(
 		<Provider store={store}>

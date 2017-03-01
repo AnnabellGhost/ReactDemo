@@ -2,11 +2,11 @@ var path = require('path');
 var webpack = require('webpack');
 var env = process.env.NODE_ENV;
 module.exports = {
-	entry: ['babel-polyfill','./src/index.js'],
+	entry: ['babel-polyfill','./src/index.jsx'],
 	output: {
 		path: __dirname +'/dist', // 输出文件的保存路径
 		filename: 'bundle.js', // 输出文件的名称
-		publicPath: '/ReactDemo/'
+		publicpath:'/ReactDemo/'
 	},
 	
 	module: {
